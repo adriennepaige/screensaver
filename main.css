@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background:  rgb(194, 160, 225);
+    animation: colorChange 20s infinite alternate;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.circle {
+  position: absolute;
+  animation:moveX 5s linear 0s infinite alternate, moveY 5.6s linear 0s infinite alternate ;
+}
+
+@keyframes moveX {
+  from { left: -2370px; } to { left: calc(100% - 2630px); }
+}
+
+@keyframes moveY {
+  from { top: -1570px; } to { top: calc(100% - 1830px); }
+}
+
+@keyframes colorChange {
+  0% {background-color: rgb(194, 160, 225);}
+  10% {background-color: pink;}
+  20% {background-color: rgb(198, 153, 220);}
+  30% {background-color: rgb(255, 204, 110);}
+  40% {background-color: rgb(245, 124, 124);}
+  50% {background-color: rgb(222, 138, 222);}
+  60% {background-color: rgb(198, 198, 255);}
+  70% {background-color: rgb(203, 255, 152);}
+  80% {background-color: burlywood;}
+  90% {background-color: lightgoldenrodyellow;}
+  100% {background-color: rgb(255, 154, 204);}
+}
